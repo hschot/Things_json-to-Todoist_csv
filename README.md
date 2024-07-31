@@ -73,16 +73,6 @@ python Things_json-to-Todoist_csv.py things-all-output.json -a
 ```shell
 python Things_json-to-Todoist_csv.py things-all-output.json -i
 ```
-### To obtain the JSON file from Things 3:
-
-1. Install `things-cli`: [GitHub source](https://github.com/thingsapi/things-cli)
-2. Run the following command to generate the JSON file:
-
-   ```shell
-   things-cli -j --recursive all > things-all-output.json
-   ```
-
-   (Replace `'things-all-output.json'` with your desired filename)
 
 ### To import into Todoist:
 

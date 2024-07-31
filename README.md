@@ -1,13 +1,13 @@
 # Things to Todoist Converter
 
-This Python script converts data exported from the 'Things' todo app into CSV files compatible with 'Todoist'. It allows you to export tasks from 'Things' using the `things-cli` tool and then transform them into a format that can be imported into 'Todoist' projects.
+This Python script converts data exported from the [Things](https://culturedcode.com/things/) todo app into CSV files compatible with [Todoist](https://todoist.com). It allows you to export tasks from 'Things' using the `things-cli` tool and then transform them into a format that can be imported into 'Todoist' projects.
 
 ## Prerequisites
 
 1. **Install `things-cli`:**  
    To export your data from the 'Things' app in JSON format, you first need to install the `things-cli` tool. You can find the installation instructions and source code on the [GitHub page](https://github.com/thingsapi/things-cli).
 
-2. **Export Data from Things:**  
+2. **Export Data from Things:**
    Use the following command to export all your tasks and projects from 'Things' into a JSON file:
 
    ```shell

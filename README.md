@@ -35,24 +35,6 @@ Things_json-to-Todoist_csv.py [-h] [-a [AREA_NAME]] [-i] input_json [output_dir]
 
 Convert Things 3 JSON export to CSV files. By default (without `-a` or `-i` options), the script processes all projects under all areas, creating separate CSV files for each project, and also processes top-level items into an 'inbox' file.
 
-#### To obtain the JSON file from Things 3:
-
-1. Install `things-cli`: [GitHub source](https://github.com/thingsapi/things-cli)
-2. Run the following command to generate the JSON file:
-
-   ```shell
-   things-cli -j --recursive all > things-all-output.json
-   ```
-
-   (Replace `'things-all-output.json'` with your desired filename)
-
-#### To import into Todoist:
-
-Drag and drop one of the generated CSV files into a Todoist project.  
-Also see: 
-- [Introduction to Backups](https://todoist.com/help/articles/introduction-to-backups)
-- [Import or Export Todoist Project Templates](https://todoist.com/help/articles/import-or-export-todoist-project-templates)
-
 ### Positional Arguments
 
 - `input_json`: Path to the input JSON file exported from Things 3 using `things-cli`.
@@ -68,29 +50,47 @@ Also see:
 ### Examples
 
 1. **Process all projects under all areas and create an inbox file:**
-   ```shell
-   python Things_json-to-Todoist_csv.py things-all-output.json
-   ```
+```shell
+python Things_json-to-Todoist_csv.py things-all-output.json
+```
 
 2. **Process all projects and output to a specified directory:**
-   ```shell
-   python Things_json-to-Todoist_csv.py things-all-output.json output_directory
-   ```
+```shell
+python Things_json-to-Todoist_csv.py things-all-output.json output_directory
+```
 
 3. **Process only the specified area:**
-   ```shell
-   python Things_json-to-Todoist_csv.py things-all-output.json -a 'Area Name'
-   ```
+```shell
+python Things_json-to-Todoist_csv.py things-all-output.json -a 'Area Name'
+```
 
 4. **Process each area individually, creating separate files for each:**
-   ```shell
-   python Things_json-to-Todoist_csv.py things-all-output.json -a
-   ```
+```shell
+python Things_json-to-Todoist_csv.py things-all-output.json -a
+```
 
 5. **Process only top-level items into an inbox file:**
-   ```shell
-   python Things_json-to-Todoist_csv.py things-all-output.json -i
+```shell
+python Things_json-to-Todoist_csv.py things-all-output.json -i
 ```
+### To obtain the JSON file from Things 3:
+
+1. Install `things-cli`: [GitHub source](https://github.com/thingsapi/things-cli)
+2. Run the following command to generate the JSON file:
+
+   ```shell
+   things-cli -j --recursive all > things-all-output.json
+   ```
+
+   (Replace `'things-all-output.json'` with your desired filename)
+
+### To import into Todoist:
+
+Drag and drop one of the generated CSV files into a Todoist project.  
+Also see: 
+- [Introduction to Backups](https://todoist.com/help/articles/introduction-to-backups)
+- [Import or Export Todoist Project Templates](https://todoist.com/help/articles/import-or-export-todoist-project-templates)
+
 
 ### Todoist CSV Format Specification
 

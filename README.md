@@ -26,7 +26,11 @@ To use the script, simply download it from the repository:
 ### **Run the Script:**
    - Open your terminal or command prompt.
    - Navigate to the directory where you saved the script.
+<<<<<<< HEAD
    - Run the script with [python](https://www.python.org) as described below.
+=======
+   - Run the script with python as described below.
+>>>>>>> main
 
 ### Usage
 

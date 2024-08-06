@@ -26,11 +26,12 @@ To use the script, simply download it from the repository:
 ### **Run the Script:**
    - Open your terminal or command prompt.
    - Navigate to the directory where you saved the script.
+   - Run the script with [python](https://www.python.org) as described below.
 
 ### Usage
 
 ```
-Things_json-to-Todoist_csv.py [-h] [-a [AREA_NAME]] [-i] input_json [output_dir]
+python Things_json-to-Todoist_csv.py [-h] [-a [AREA_NAME]] [-i] input_json [output_dir]
 ```
 
 Convert Things 3 JSON export to CSV files. By default (without `-a` or `-i` options), the script processes all projects under all areas, creating separate CSV files for each project, and also processes top-level items into an 'inbox' file.
